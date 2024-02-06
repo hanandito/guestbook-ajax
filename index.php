@@ -2,6 +2,7 @@
 	include('header.php');
 ?>
 <title>Testimonial Harita Gallery - Harita</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
 <script src="js/comments.js"></script>
 <?php include('container.php');?>
 	<div class="container pt-5">		
