@@ -21,7 +21,7 @@
 					<br>
 					<div class="form-group">
 						<input type="hidden" name="commentId" id="commentId" value="0" />
-            <input type="file" name="uploadedfile" accept="image/*;capture=camera" value="take / upload photos from library" /> 
+            			<input type="file" name="uploadedfile" accept="image/*;capture=camera"> 
 						<input type="submit" name="submit" id="submit" class="btn btn-primary" value="Submit" />
 					</div>
 				</form>
