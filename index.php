@@ -10,9 +10,9 @@
 		<br>
 		<div class="row">
 			<div class="col-lg-12">
-				<form method="POST" id="commentForm">
+				<form method="POST" id="commentForm" enctype="multipart/form-data">
 					<div class="form-group">
-						<input type="text" name="name" id="name" class="form-control" placeholder="Enter Name" required />
+						<input type="text" name="nama" id="nama" class="form-control" placeholder="Enter Name" required />
 					</div>
 					<div class="form-group my-3">
 						<textarea name="comment" id="comment" class="form-control" placeholder="Enter Messages" rows="5" required></textarea>
@@ -21,7 +21,8 @@
 					<br>
 					<div class="form-group">
 						<input type="hidden" name="commentId" id="commentId" value="0" />
-            			<input type="file" name="uploadedfile" accept="image/*;capture=camera"> 
+            			<input type="file" name="foto" accept="image/*;capture=camera" value="Upload Image" onchange="preview()" /> 
+						<img id="thumb" src="" width="150px"/>
 						<input type="submit" name="submit" id="submit" class="btn btn-primary" value="Submit" />
 					</div>
 				</form>
@@ -30,6 +31,11 @@
 				
 		<br>	   
 	</div>	
+	<script>
+			function preview() {
+				thumb.src=URL.createObjectURL(event.target.files[0]);
+			}
+	</script>
 	
 <?php include('footer.php');?>
 
