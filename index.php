@@ -12,7 +12,7 @@
 			<div class="col-lg-12">
 				<form method="POST" id="commentForm" enctype="multipart/form-data">
 					<div class="form-group">
-						<input type="text" name="nama" id="nama" class="form-control" placeholder="Enter Name" required />
+						<input type="text" name="name" id="name" class="form-control" placeholder="Enter Name" required />
 					</div>
 					<div class="form-group my-3">
 						<textarea name="comment" id="comment" class="form-control" placeholder="Enter Messages" rows="5" required></textarea>
